@@ -281,9 +281,9 @@
 
     // Videos
     const clips = [
-      {src:'ssstik.io_@bravo.donny_1759392271322.mp4', poster:'thumb_bravo.png',          handle:'@bravo.donny'},
-      {src:'ssstik.io_@keanusleaze_1759392294586.mp4', poster:'thumb_keanu.png',          handle:'@keanusleaze'},
-      {src:'ssstik.io_@satisfactoryfactor_1759392325173.mp4', poster:'thumb_satisfactory.png', handle:'@satisfactoryfactor'}
+      {src:'ssstik.io_@bravo.donny_1759392271322.mp4', poster:'thumb_bravo.png',          handle:'@bravo.donny',  url: 'https://www.tiktok.com/@bravo.donny/video/7555907652748971295'},
+      {src:'ssstik.io_@keanusleaze_1759392294586.mp4', poster:'thumb_keanu.png',          handle:'@keanusleaze',  url: 'https://www.tiktok.com/@keanusleaze/video/7549470443149790494'},
+      {src:'ssstik.io_@satisfactoryfactor_1759392325173.mp4', poster:'thumb_satisfactory.png', handle:'@satisfactoryfactor',  url: 'https://www.tiktok.com/@satisfactoryfactor/video/7552178043985333526'}
     ];
     const vidsEl = document.getElementById('vids');
     clips.forEach(v => {
@@ -299,7 +299,7 @@
           Sorry, your browser can’t play this video.
         </video>
         <div class="footer">
-          <button class="view-profile" onclick="window.open('${X_PROFILE}','_blank')">Open</button>
+          <button class="view-profile" onclick="window.open('${v.url}','_blank')">Open</button>
         </div>`;
       vidsEl.appendChild(card);
     });
