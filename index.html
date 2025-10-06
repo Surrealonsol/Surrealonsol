@@ -224,6 +224,13 @@
           <div class="listing-title">CoinGecko</div>
           <div class="listing-cta">View Listing</div>
         </a>
+
+	<!-- NEW: DEXTools -->
+	 <a class="listing-card" id="dexLink" href="#" target="_blank" rel="noopener">
+    		<img class="listing-logo" src="dextools.png" alt="DEXTools logo" />
+    		<div class="listing-title">DEXTools</div>
+    		<div class="listing-cta">View Listing</div>
+  </a>
       </section>
 
       <h2 class="section-title">Join Our Community! 🎉</h2>
@@ -250,10 +257,12 @@
     const X_PROFILE = 'https://x.com/SurrealOn_Sol';
     const JUP_URL   = 'https://pump.fun/coin/9mSsEqTCDEyFnPvJVdQ6K7uapfsvHahqGEyPV7zApump';
     const DEX_VIEW  = 'https://dexscreener.com/solana/9mSsEqTCDEyFnPvJVdQ6K7uapfsvHahqGEyPV7zApump';
+    const DEXTOOLS_URL = `https://www.dextools.io/app/en/token/surrealai?t=1759733691806`; // generic search by CA
 
     // Wire buttons
     document.getElementById('xLink').href = X_PROFILE;
     document.getElementById('jupLink').href = JUP_URL;
+    document.getElementById('dexLink').href = DEXTOOLS_URL;
 
     // Community links
     document.getElementById('join-x').href  = X_PROFILE;
